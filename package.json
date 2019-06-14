@@ -1,0 +1,29 @@
+{
+  "name": "codility",
+  "version": "0.0.1",
+  "description": "Codility Coding Exercises",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/inclu-media/codility.git"
+  },
+  "keywords": [
+    "node",
+    "coding",
+    "challenge",
+    "exercise",
+    "algorithms"
+  ],
+  "author": "Martin Melcher",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/inclu-media/codility/issues"
+  },
+  "homepage": "https://github.com/inclu-media/codility#readme",
+  "devDependencies": {
+    "mocha": "^6.1.4"
+  }
+}
