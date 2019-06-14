@@ -1,7 +1,7 @@
 /**
  * Given a sequence CAGCCTA calculate the pref sums for each nucleotide 
  * e.g. for A .. ps = [0,1,1,1,1,1,2]
- * This can be used to calculate if A occuurs in specific ranke
+ * This can be used to calculate if A occurs in specific ranke
  * ps[6] - ps[0] = 2 - 0 > 0 ... A appears in [0..6]
  * ps[4] - ps[2] = 1 - 1 = 0 ... A does not appear in [2..4] 
  */
