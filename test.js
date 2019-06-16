@@ -4,6 +4,7 @@ const genomicRangeQuery = require('./5_PrefixSums/GenomicRangeQuery.js')
 const countDiv = require('./5_PrefixSums/CountDiv.js')
 
 const maxProductOfThree = require('./6_Sorting/MaxProductOfThree.js')
+const distinct = require('./6_Sorting/Distinct.js')
 
 describe('Lesson 5 - Prefix Sum', () => {
 
@@ -34,6 +35,15 @@ describe('Lesson 6 - Sorting', () => {
         })
         it('[10,10,10]', () => {
             assert.equal(maxProductOfThree([10,10,10]), 1000)
+        })
+    })
+
+    describe('Distinct', () => {
+        it('demo data', () => {
+            assert.equal(distinct([2,1,1,2,3,1]), 3)
+        })
+        it('empty array', () => {
+            assert.equl(distinct([]), 0)
         })
     })
 })
