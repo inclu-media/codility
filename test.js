@@ -5,6 +5,7 @@ const countDiv = require('./5_PrefixSums/CountDiv.js')
 
 const maxProductOfThree = require('./6_Sorting/MaxProductOfThree.js')
 const distinct = require('./6_Sorting/Distinct.js')
+const triangle = require('./6_Sorting/Triangle.js')
 
 describe('Lesson 5 - Prefix Sum', () => {
 
@@ -43,7 +44,16 @@ describe('Lesson 6 - Sorting', () => {
             assert.equal(distinct([2,1,1,2,3,1]), 3)
         })
         it('empty array', () => {
-            assert.equl(distinct([]), 0)
+            assert.equal(distinct([]), 0)
+        })
+    })
+
+    describe('Triangle', () => {
+        it('demo data', () => {
+            assert.equal(triangle([10,2,5,1,8,20]), 1)
+        })
+        it('empty array', () => {
+            assert.equal(triangle([]), 0)
         })
     })
 })
