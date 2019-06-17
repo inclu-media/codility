@@ -8,6 +8,8 @@ const distinct = require('./6_Sorting/Distinct.js')
 const triangle = require('./6_Sorting/Triangle.js')
 const numberOfDiscIntersections = require('./6_Sorting/NumberOfDiscIntersections.js')
 
+const brackets = require('./7_StacksAndQueues/Brackets.js')
+
 describe('Lesson 5 - Prefix Sum', () => {
 
     describe('GenomicRangeQuery', () => {
@@ -61,6 +63,18 @@ describe('Lesson 6 - Sorting', () => {
     describe('NumberOfDiscIntersections', () => {
         it('demo data', () => {
             assert.equal(numberOfDiscIntersections([1,5,2,1,4,0]), 11)
+        })
+    })
+})
+
+describe('Lesson 7 - Stacks and Queues', () => {
+
+    describe('Brackets', () => {
+        it('demo data 1', () => {
+            assert.equal(brackets("{[()()]}"), 1)
+        })
+        it('demo data 2', () => {
+            assert.equal(brackets( "([)()]"), 0)
         })
     })
 })
