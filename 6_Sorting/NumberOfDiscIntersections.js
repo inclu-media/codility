@@ -5,8 +5,8 @@
 
 function solution(A) {
     // setp 1: collect start and endpoint of disks
-    const startingPoints = []
-    const endPoints = []
+    let startingPoints = []
+    let endPoints = []
     for (let x=0; x<A.length; x++) {
         startingPoints.push(x-A[x])
         endPoints.push(x+A[x]) 
