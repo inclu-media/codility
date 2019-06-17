@@ -9,6 +9,7 @@ const triangle = require('./6_Sorting/Triangle.js')
 const numberOfDiscIntersections = require('./6_Sorting/NumberOfDiscIntersections.js')
 
 const brackets = require('./7_StacksAndQueues/Brackets.js')
+const fish = require('./7_StacksAndQueues/Fish.js')
 
 describe('Lesson 5 - Prefix Sum', () => {
 
@@ -75,6 +76,12 @@ describe('Lesson 7 - Stacks and Queues', () => {
         })
         it('demo data 2', () => {
             assert.equal(brackets( "([)()]"), 0)
+        })
+    })
+
+    describe('Fish', () => {
+        it('demo data', () => {
+            assert.equal(fish([4,3,2,1,5],[0,1,0,0,0]), 2)
         })
     })
 })
