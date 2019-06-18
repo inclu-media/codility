@@ -15,8 +15,6 @@ function solution(H) {
             blocks++
             stack.unshift(H[x])
         }
-
-        console.log(`stack: ${stack} blocks: ${blocks}`)
     }
 
     return blocks
