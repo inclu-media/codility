@@ -11,6 +11,7 @@ const numberOfDiscIntersections = require('./6_Sorting/NumberOfDiscIntersections
 const brackets = require('./7_StacksAndQueues/Brackets.js')
 const fish = require('./7_StacksAndQueues/Fish.js')
 const nesting = require('./7_StacksAndQueues/Nesting.js')
+const stoneWall = require('./7_StacksAndQueues/StoneWall.js')
 
 describe('Lesson 5 - Prefix Sum', () => {
 
@@ -92,6 +93,18 @@ describe('Lesson 7 - Stacks and Queues', () => {
         })
         it('demo data 2', () => {
             assert.equal(nesting("())"), 0)
+        })
+    })
+
+    describe('StoneWall', () => {
+        it('demo data 1', () => {
+            assert.equal(stoneWall([8,8,5,7,9,8,7,4,8]), 7)
+        })
+        it('one block', () => {
+            assert.equal(stoneWall([10]), 1)
+        })
+        it('same height', () => {
+            assert.equal(stoneWall([10,10,10,10,10]), 1)
         })
     })
 })
