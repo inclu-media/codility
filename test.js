@@ -13,6 +13,8 @@ const fish = require('./7_StacksAndQueues/Fish.js')
 const nesting = require('./7_StacksAndQueues/Nesting.js')
 const stoneWall = require('./7_StacksAndQueues/StoneWall.js')
 
+const dominator = require('./8_Leader/Dominator.js')
+
 describe('Lesson 5 - Prefix Sum', () => {
 
     describe('GenomicRangeQuery', () => {
@@ -107,4 +109,23 @@ describe('Lesson 7 - Stacks and Queues', () => {
             assert.equal(stoneWall([10,10,10,10,10]), 1)
         })
     })
+})
+
+describe('Lesson 8 - Leader', () => {
+
+    describe('Dominator', () => {
+        it('demo data', () => {
+            assert.equal(dominator([3,4,3,2,3,-1,3,3]), 0)
+        })
+        it('empty input', () => {
+            assert.equal(dominator([]), -1)
+        })
+        it('single value', () => {
+            assert.deepEqual(dominator([10]), 0)
+        })
+        it('no dominator', () => {
+            assert.equal(dominator([1,2,3,4,5,6,7,8,9]), -1)
+        })
+    })
+
 })
