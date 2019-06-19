@@ -16,6 +16,8 @@ const stoneWall = require('./7_StacksAndQueues/StoneWall.js')
 const dominator = require('./8_Leader/Dominator.js')
 const equiLeader = require('./8_Leader/EquiLeader.js')
 
+const maxProfit = require('./9_MaximumSliceProblem/MaxProfit.js')
+
 describe('Lesson 5 - Prefix Sum', () => {
 
     describe('GenomicRangeQuery', () => {
@@ -135,6 +137,16 @@ describe('Lesson 8 - Leader', () => {
         })
         it('single value', () => {
             assert.equal(equiLeader([10]), 0)
+        })
+    })
+
+})
+
+describe('Lesson 8 - Maximum Slice Problem', () => {
+
+    describe('MaxProfil', () => {
+        it('demo data', () => {
+            assert.equal(maxProfit([23171,21011,21123,21366,21013,21367]), 356)
         })
     })
 
