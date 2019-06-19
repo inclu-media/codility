@@ -14,6 +14,7 @@ const nesting = require('./7_StacksAndQueues/Nesting.js')
 const stoneWall = require('./7_StacksAndQueues/StoneWall.js')
 
 const dominator = require('./8_Leader/Dominator.js')
+const equiLeader = require('./8_Leader/EquiLeader.js')
 
 describe('Lesson 5 - Prefix Sum', () => {
 
@@ -125,6 +126,15 @@ describe('Lesson 8 - Leader', () => {
         })
         it('no dominator', () => {
             assert.equal(dominator([1,2,3,4,5,6,7,8,9]), -1)
+        })
+    })
+
+    describe('EquiLeader', () => {
+        it('demo data', () => {
+            assert.equal(equiLeader([4,3,4,4,4,2]), 2)
+        })
+        it('single value', () => {
+            assert.equal(equiLeader([10]), 0)
         })
     })
 

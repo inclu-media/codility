@@ -31,7 +31,7 @@ function solution(A) {
                 count ++
             }
         }
-        if (count >= Math.ceil(_A.length / 2)) {
+        if (count > _A.length / 2) {
             return _A.indexOf(cand)
         } else { // cand was not a leader
             return -1
