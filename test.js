@@ -18,6 +18,7 @@ const equiLeader = require('./8_Leader/EquiLeader.js')
 
 const maxProfit = require('./9_MaximumSliceProblem/MaxProfit.js')
 const maxSliceSum = require('./9_MaximumSliceProblem/MaxSliceSum.js')
+const maxDoubleSliceSum = require('./9_MaximumSliceProblem/MaxDoubleSliceSum.js')
 
 describe('Lesson 5 - Prefix Sum', () => {
 
@@ -154,6 +155,15 @@ describe('Lesson 8 - Maximum Slice Problem', () => {
     describe('MaxSliceSum', () => {
         it('demo data', () => {
             assert.equal(maxSliceSum([3,2,-6,4,0]), 5)
+        })
+    })
+
+    describe('MaxDoubleSliceSum', () => {
+        it('demo data', () => {
+            assert.equal(maxDoubleSliceSum([3,2,6,-1,4,5,-1,2]), 17)
+        })
+        it('min data', () => {
+            assert.equal(maxDoubleSliceSum([1,2,3]), 0)
         })
     })
 
