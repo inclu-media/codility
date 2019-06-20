@@ -21,6 +21,7 @@ const maxSliceSum = require('./9_MaximumSliceProblem/MaxSliceSum.js')
 const maxDoubleSliceSum = require('./9_MaximumSliceProblem/MaxDoubleSliceSum.js')
 
 const countFactors = require('./10_PrimeAndComposit/CountFactors.js')
+const minPerimeterRectangle = require('./10_PrimeAndComposit/MinPerimeterRectange.js')
 
 describe('Lesson 5 - Prefix Sum', () => {
 
@@ -185,6 +186,12 @@ describe('Lesson 10 - Prime and Composite Numbers', () => {
         })
         it('max prime', () => {
             assert.equal(countFactors(2147483647), 2)
+        })
+    })
+
+    describe('MinPerimeterRectangle', () => {
+        it('demo data', () => {
+            assert.equal(minPerimeterRectangle(30), 22)
         })
     })
 
