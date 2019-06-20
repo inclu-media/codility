@@ -20,6 +20,8 @@ const maxProfit = require('./9_MaximumSliceProblem/MaxProfit.js')
 const maxSliceSum = require('./9_MaximumSliceProblem/MaxSliceSum.js')
 const maxDoubleSliceSum = require('./9_MaximumSliceProblem/MaxDoubleSliceSum.js')
 
+const countFactors = require('./10_PrimeAndComposit/CountFactors.js')
+
 describe('Lesson 5 - Prefix Sum', () => {
 
     describe('GenomicRangeQuery', () => {
@@ -164,6 +166,25 @@ describe('Lesson 8 - Maximum Slice Problem', () => {
         })
         it('min data', () => {
             assert.equal(maxDoubleSliceSum([1,2,3]), 0)
+        })
+    })
+
+})
+
+describe('Lesson 10 - Prime and Composite Numbers', () => {
+
+    describe('CountFactors', () => {
+        it('demo data 1', () => {
+            assert.equal(countFactors(24), 8)
+        })
+        it('demo data 2', () => {
+            assert.equal(countFactors(36), 9)
+        })
+        it('min', () => {
+            assert.equal(countFactors(1), 1)
+        })
+        it('max prime', () => {
+            assert.equal(countFactors(2147483647), 2)
         })
     })
 
