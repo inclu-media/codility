@@ -24,6 +24,9 @@ const countFactors = require('./10_PrimeAndComposit/CountFactors.js')
 const minPerimeterRectangle = require('./10_PrimeAndComposit/MinPerimeterRectange.js')
 const peaks = require('./10_PrimeAndComposit/Peaks.js')
 
+const strSymmetryPoint = require('./99_Misc/StrSymmetryPoint.js')
+const negativeBinary = require('./99_Misc/NegativeBinary.js')
+
 describe('Lesson 5 - Prefix Sum', () => {
 
     describe('GenomicRangeQuery', () => {
@@ -199,6 +202,25 @@ describe('Lesson 10 - Prime and Composite Numbers', () => {
     describe('Peaks', () => {
         it('demo data', () => {
             assert.equal(peaks([1,2,3,4,3,4,1,2,3,4,6,2]), 3)
+        })
+    })
+
+})
+
+describe('Lesson 99 - Misc', () => {
+    
+    describe('StrSymmetryPoint', () => {
+        it('demo data', () => {
+            assert.equal(strSymmetryPoint('racecar'), 3)
+        })
+    })
+
+    describe('negativeBianry', () => {
+        it('9 -> -9', () => {
+            assert.deepEqual(negativeBinary([1,0,0,1,1]), [1,1,0,1])
+        })
+        it('5 -> -5', () => {
+            assert.deepEqual(negativeBinary([1,0,1]), [1,1,1,1])
         })
     })
 
