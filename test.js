@@ -9,6 +9,8 @@ const frogJmp = require('./3_TimeComplexity/FrogJmp.js')
 const permMissingElem = require('./3_TimeComplexity/PermMissingElem.js')
 const tapeEquilibrium = require('./3_TimeComplexity/TapeEquilibrium.js')
 
+const permCheck = require('./4_CountingElements/PermCheck.js')
+
 const genomicRangeQuery = require('./5_PrefixSums/GenomicRangeQuery.js')
 const countDiv = require('./5_PrefixSums/CountDiv.js')
 
@@ -86,6 +88,27 @@ describe('Lesson 3 - Time Complexity', () => {
         })
     })
 
+})
+
+describe('Lesson 4 - Counting Elements', () => {
+
+    describe('PermCheck', () => {
+        it('simple positive', () => {
+            assert.equal(permCheck([4,1,3,2]),1)
+        })
+        it('simple negative', () => {
+            assert.equal(permCheck([4,1,3]),0)
+        })
+        it('single element positive', () => {
+            assert.equal(permCheck([1]),1)
+        })
+        it('single element negative', () => {
+            assert.equal(permCheck([10]),0)
+        })
+        it('single element extreme max', () => {
+            assert.equal(permCheck([1000000]),0)
+        })
+    })
 })
 
 /*
