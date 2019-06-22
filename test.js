@@ -1,6 +1,6 @@
 const assert = require('assert');
 
-const binaryGap = require('./1_Iterations/BinaryGab.js')
+const binaryGap = require('./1_Iterations/BinaryGap.js')
 
 const genomicRangeQuery = require('./5_PrefixSums/GenomicRangeQuery.js')
 const countDiv = require('./5_PrefixSums/CountDiv.js')

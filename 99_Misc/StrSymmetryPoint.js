@@ -1,6 +1,3 @@
-// TODO Optimize: halbieren 
-
-
 function solution(S) {
     if (S.length % 2 == 0) {
         return -1
