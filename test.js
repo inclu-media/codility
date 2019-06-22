@@ -1,5 +1,7 @@
 const assert = require('assert');
 
+const binaryGap = require('./1_Iterations/BinaryGab.js')
+
 const genomicRangeQuery = require('./5_PrefixSums/GenomicRangeQuery.js')
 const countDiv = require('./5_PrefixSums/CountDiv.js')
 
@@ -26,7 +28,22 @@ const peaks = require('./10_PrimeAndComposit/Peaks.js')
 
 const strSymmetryPoint = require('./99_Misc/StrSymmetryPoint.js')
 const negativeBinary = require('./99_Misc/NegativeBinary.js')
+const knightMoves = require('./99_Misc/KnightMoves.js')
+const codilityDemoTest = require('./99_Misc/CodilityDemoTest.js')
 
+describe('Lesson 1 - Iterations', () => {
+
+    describe('Binary Gab', () => {
+        it('demo data', () => {
+            assert.equal(binaryGap(1041), 5)
+        })
+        it('demo data', () => {
+            assert.equal(binaryGap(32), 0)
+        })
+    })
+
+})
+/*
 describe('Lesson 5 - Prefix Sum', () => {
 
     describe('GenomicRangeQuery', () => {
@@ -224,4 +241,35 @@ describe('Lesson 99 - Misc', () => {
         })
     })
 
+    describe('knightMoves', () => {
+        it('demo data', () => {
+            assert.equal(knightMoves(6,[3,4],[0,0]), 3)
+        })
+        it('30x30 field', () => {
+            assert.equal(knightMoves(30,[0,0],[29,29]), 19)
+        })
+    })
+
+    describe('codilityDemoTest', () => {
+        it('test 1', () => {
+            assert.equal(codilityDemoTest([1, 3, 6, 4, 1, 2]), 5)
+        })
+        it('test 2', () => {
+            assert.equal(codilityDemoTest([1,2,3]), 4)
+        })
+        it('test 3', () => {
+            assert.equal(codilityDemoTest([-1,-3]), 1)
+        })
+        it('single element 1', () => {
+            assert.equal(codilityDemoTest([1000000]), 1)
+        })
+        it('single element 2', () => {
+            assert.equal(codilityDemoTest([-1000000]), 1)
+        })
+        it('single element 2', () => {
+            assert.equal(codilityDemoTest([2]), 1)
+        })
+    })  
 })
+
+*/
