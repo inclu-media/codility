@@ -2,6 +2,13 @@ const assert = require('assert');
 
 const binaryGap = require('./1_Iterations/BinaryGap.js')
 
+const oddOccurencesInArray = require('./2_Arrays/OddOccurencesInArray.js')
+const cyclicRotation = require('./2_Arrays/CyclicRotation.js')
+
+const frogJmp = require('./3_TimeComplexity/FrogJmp.js')
+const permMissingElem = require('./3_TimeComplexity/PermMissingElem.js')
+const tapeEquilibrium = require('./3_TimeComplexity/TapeEquilibrium.js')
+
 const genomicRangeQuery = require('./5_PrefixSums/GenomicRangeQuery.js')
 const countDiv = require('./5_PrefixSums/CountDiv.js')
 
@@ -43,6 +50,44 @@ describe('Lesson 1 - Iterations', () => {
     })
 
 })
+
+describe('Lesson 2 - Arrays', () => {
+
+    describe('Odd Occurences in Array', () => {
+        it('demo data', () => {
+            assert.equal(oddOccurencesInArray([9,3,9,3,9,7,9]),7)
+        })
+    })
+
+    describe('Cyclic Rotation', () => {
+        it('demo data', () => {
+            assert.deepEqual(cyclicRotation([3,8,9,7,6],3),[9,7,6,3,8])
+        })
+    })
+})
+
+describe('Lesson 3 - Time Complexity', () => {
+
+    describe('FrogJmp', () => {
+        it('demo data', () => {
+            assert.equal(frogJmp(10,85,30),3)
+        })
+    })
+
+    describe('PermMissingElem', () => {
+        it('demo data', () => {
+            assert.equal(permMissingElem([2,3,1,5]),4)
+        })
+    })
+
+    describe('TapeEquilibrium', () => {
+        it('demo data', () => {
+            assert.equal(tapeEquilibrium([3,1,2,4,3]),1)
+        })
+    })
+
+})
+
 /*
 describe('Lesson 5 - Prefix Sum', () => {
 
